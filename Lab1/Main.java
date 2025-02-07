@@ -6,7 +6,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String args[]) {
+        SortingUtility sortingUtility = new SortingUtility();
         List<Product> products = new ArrayList<>();
+        int sortingApproach;
         String productID;
 
         Scanner scanner = new Scanner(System.in);
@@ -32,5 +34,13 @@ public class Main {
 
             products.add(insert);
         }
+
+        System.out.println("What sorting approach would you like to use:\n" +
+                            "0: Quick Sort\n" +
+                            "1: Bubble Sort");
+
+        sortingApproach = scanner.nextInt();
+
+        sortingUtility.sort(sortingApproach, products);
     }
 }
