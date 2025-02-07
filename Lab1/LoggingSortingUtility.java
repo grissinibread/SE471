@@ -6,17 +6,11 @@ import java.util.List;
 public class LoggingSortingUtility implements SortingUtilityIF{
     @Override
     public void sort(int sortingApproach, List<Product> items) {
-        // quicksort
-        if(sortingApproach == 0) {
-
-        }
-        // bubblesort
-        else {
-
-        }
+        System.out.println("Items sorted!");
+        logSortedProducts(sortingApproach, items);
     }
 
-    private void logSortedProducts(int sortingApproach) {
+    private void logSortedProducts(int sortingApproach, List<Product> items) {
         // name, ID, price
         if(sortingApproach == 0) {
 
