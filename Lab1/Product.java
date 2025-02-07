@@ -1,3 +1,5 @@
+package Lab1;
+
 public class Product {
     // attributes
     private final String id;

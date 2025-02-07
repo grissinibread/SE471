@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String args[]) {
-        SortingUtility sortingUtility = new SortingUtility();
+        LoggingSortingUtility sortingUtility = new LoggingSortingUtility();
         List<Product> products = new ArrayList<>();
         int sortingApproach;
         String productID;

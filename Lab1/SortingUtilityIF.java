@@ -1,5 +1,8 @@
+package Lab1;
+
 import java.util.List;
 
+// interface
 public interface SortingUtilityIF {
-    public void sort(int sortingApproach, List<Product> items);
+    public List sort(int sortingApproach, List<Product> items);
 }
