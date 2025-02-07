@@ -4,10 +4,13 @@ import java.util.List;
 
 // TODO: implement methods
 public class LoggingSortingUtility implements SortingUtilityIF{
+    private final SortingUtilityIF sortingUtility = new SortingUtility();
+
     @Override
-    public void sort(int sortingApproach, List<Product> items) {
+    public List sort(int sortingApproach, List<Product> items) {
         System.out.println("Items sorted!");
-        logSortedProducts(sortingApproach, items);
+        logSortedProducts(sortingApproach, sortingUtility.sort(sortingApproach, items));
+        return items;
     }
 
     private void logSortedProducts(int sortingApproach, List<Product> items) {

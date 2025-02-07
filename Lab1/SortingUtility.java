@@ -4,10 +4,9 @@ import java.util.List;
 
 // TODO: Implement methods
 public class SortingUtility implements SortingUtilityIF {
-    LoggingSortingUtility loggingSortingUtility = new LoggingSortingUtility();
 
     @Override
-    public void sort(int sortingApproach, List<Product> items) {
+    public List sort(int sortingApproach, List<Product> items) {
         // quicksort
         if(sortingApproach == 0) {
 
@@ -16,6 +15,6 @@ public class SortingUtility implements SortingUtilityIF {
         else {
 
         }
-        loggingSortingUtility.sort(sortingApproach, items);
+        return items;
     }
 }
