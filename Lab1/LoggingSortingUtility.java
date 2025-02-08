@@ -16,11 +16,14 @@ public class LoggingSortingUtility implements SortingUtilityIF{
     private void logSortedProducts(int sortingApproach, List<Product> items) {
         // name, ID, price
         if(sortingApproach == 0) {
-
+            System.out.println("Items sorted using quick sort!");
+            for (int i = 0; i < items.size(); i++) {
+                System.out.println(items.get(i).getName() + " " + items.get(i).getID()+ " " + items.get(i).getPrice());
+            }
         }
         // ID, name, price
         else {
-
+            System.out.println("Items sorted using bubble sort!");
         }
     }
 }
