@@ -2,7 +2,6 @@ package Lab1;
 
 import java.util.List;
 
-// TODO: implement methods
 public class LoggingSortingUtility implements SortingUtilityIF{
     private final SortingUtilityIF sortingUtility = new SortingUtility();
 
@@ -12,7 +11,6 @@ public class LoggingSortingUtility implements SortingUtilityIF{
         logSortedProducts(sortingApproach, sortingUtility.sort(sortingApproach, items));
         return items;
     }
-
     private void logSortedProducts(int sortingApproach, List<Product> items) {
         // name, ID, price
         if(sortingApproach == 0) {
@@ -24,6 +22,9 @@ public class LoggingSortingUtility implements SortingUtilityIF{
         // ID, name, price
         else {
             System.out.println("Items sorted using bubble sort!");
+            for(int i = 0; i < items.size(); i++) {
+                System.out.println(items.get(i).getID() + " " + items.get(i).getName() + " " + items.get(i).getPrice());
+            }
         }
     }
 }
