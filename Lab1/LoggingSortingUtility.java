@@ -11,7 +11,6 @@ public class LoggingSortingUtility implements SortingUtilityIF{
         logSortedProducts(sortingApproach, sortingUtility.sort(sortingApproach, items));
         return items;
     }
-
     private void logSortedProducts(int sortingApproach, List<Product> items) {
         // name, ID, price
         if(sortingApproach == 0) {
