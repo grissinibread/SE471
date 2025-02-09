@@ -16,7 +16,7 @@ public class SortingUtility implements SortingUtilityIF {
         }
         // bubblesort
         else {
-            System.out.println(sortingApproach);
+            bubbleSort(items);
         }
         return items;
     }
@@ -41,7 +41,17 @@ public class SortingUtility implements SortingUtilityIF {
         }
     }
 
-    private void bubbleSort (List<Product> items, int low, int high) {
-
+    private void bubbleSort (List<Product> items) {
+        boolean swap;
+        for (int i = 0; i < items.size() - 1; i++) {
+            swap = false;
+            for (int j = 0; j < items.size()-i-1; j++) {
+                if (items.get(j).getPrice() > items.get(j+1).getPrice()) {
+                    swap = true;
+                    swap(items, j, j+1);
+                }
+            }
+            if (!swap) {break;}
+        }
     }
 }
