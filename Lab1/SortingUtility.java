@@ -4,7 +4,6 @@ import java.util.List;
 
 import static java.util.Collections.swap;
 
-// TODO: Implement methods
 public class SortingUtility implements SortingUtilityIF {
 
     @Override
@@ -51,7 +50,8 @@ public class SortingUtility implements SortingUtilityIF {
                     swap(items, j, j+1);
                 }
             }
-            if (!swap) {break;}
+            if (!swap)
+                break;
         }
     }
 }
