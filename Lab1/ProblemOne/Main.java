@@ -1,4 +1,4 @@
-package Lab1;
+package Lab1.ProblemOne;
 import java.util.ArrayList;
 import java.util.Scanner;
 
